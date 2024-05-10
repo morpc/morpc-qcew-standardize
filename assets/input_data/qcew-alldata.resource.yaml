@@ -1,0 +1,12 @@
+name: morpc-qcew-
+type: table
+title: Quarterly count of employment and wages reported by employers, at the county level.
+description: Each quarter the U.S. Census Bureau Population Estimates Program produces count of employment and wages reported by employers for the prior quarter. This data set includes annual factors for each given year, average establishment counts and employment levels, total wages, taxable wages and annual contributions, average annual and weekly pay, along with over the year change by count and percentage for each previously mentioned factor. The location quotient for average establishment counts and employment levels, total wages, taxable wages and annual contributions are also included. Each of these factotrs are indentified by county code, ownership code, industry code, year, and quarter.
+profile: tabular-data-resource
+path: co-est2023-alldata.csv
+scheme: file
+format: csv
+mediatype: text/csv
+encoding: iso-8859-1
+hash: 1f8e9acefe5fb296f1dc02dbf11194af
+bytes: 1393471
