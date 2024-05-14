@@ -46,10 +46,10 @@ The process requires inputted BLS QCEW '.csv' files from the user. These files c
 
 ## Revision history
 
-### 2024-05-10 Oliver Gwynn <ogwynn@morpc.org>
-
-Initial WIP version. 
-
 ### 2024-05-14 Oliver Gwynn <ogwynn@morpc.org>
 
 First revision.
+
+### 2024-05-10 Oliver Gwynn <ogwynn@morpc.org>
+
+Initial WIP version. 
