@@ -8,7 +8,7 @@ config_version: 1
 title: BLS QCEW Data Compliation and Tranformation for Wide and Long-form Outputs.
 
 # Current version identifier for the data kit. Should be a machine-readable value in one of the following forms:
-version: 2024-05-10
+version: 2024-05-14
 
 # A brief, human-readable description of the purpose and contents of the data kit.
 description: This data kit is intended to automate the processing of the Quarterly Census of Employment and Wages (QCEW) data, provided by the U.S. Bureau of Labor Statistics. The kit includes all resources necessary to produce a long data set based on user-specified region and years.

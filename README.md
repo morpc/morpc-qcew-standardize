@@ -1,7 +1,7 @@
 # Data Kit - County Quarterly Census of Employment and Wage Filtering
 ## Version
 
-Current version: 2024-05-10
+Current version: 2024-05-14
 
 ## Provider
 
@@ -49,3 +49,7 @@ The process requires inputted BLS QCEW '.csv' files from the user. These files c
 ### 2024-05-10 Oliver Gwynn <ogwynn@morpc.org>
 
 Initial WIP version. 
+
+### 2024-05-14 Oliver Gwynn <ogwynn@morpc.org>
+
+First revision.
