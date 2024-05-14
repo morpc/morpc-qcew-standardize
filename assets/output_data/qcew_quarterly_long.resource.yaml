@@ -1,6 +1,6 @@
 name: qcew_quarterly_long
 type: table
-title: Compiled QCEW County Data, 2018-2022 (wide form)
+title: Compiled QCEW County Data, 2020-2020 (long form)
 description: Employment and wage data for counties in MOPRC region, derived from the
   U.S. Bureau of Labor Statistics.
 profile: tabular-data-resource
@@ -9,6 +9,6 @@ scheme: file
 format: csv
 mediatype: text/csv
 encoding: utf-8
-hash: f01903560b4f5df421f23837a7e10afe
-bytes: 647517331
+hash: 3a9a339f28f5c66a0162b2af87932de0
+bytes: 7581114
 schema: morpc-qcew-long.schema.yaml

@@ -9,7 +9,6 @@ Current version: 2024-05-10
   - Contact: 
     - Name: Oliver Gwynn
 	- E-mail: ogwynn@morpc.org
-	- Phone: 202-997-6325
 
 ## Disclaimer
 
@@ -17,11 +16,11 @@ This data kit is a work in progress.
 
 ## Introduction
 
-Each quarter the U.S. Census Bureau Population Estimates Program produces count of employment and wages reported by employers for the prior quarter. This data set includes annual factors for each given year, average establishment counts and employment levels, total wages, taxable wages and annual contributions, average annual and weekly pay, along with over the year change by count and percentage for each previously mentioned factor. The location quotient for average establishment counts and employment levels, total wages, taxable wages and annual contributions are also included.
+Each quarter the U.S. Bureau of Labor Statistics Census of Employment and Wage produces count of employment and wages reported by employers for the prior quarter. This data set includes annual factors for each given year, average establishment counts and employment levels, total wages, taxable wages and annual contributions, average annual and weekly pay, along with over the year change by count and percentage for each previously mentioned factor. The location quotient for average establishment counts and employment levels, total wages, taxable wages and annual contributions are also included.
 
 ## Outputs
 qcew_annual_long
-This data kit includes up to four standardized outputs derived from a single vintage of of Census PEP data:
+This data kit includes up to four standardized outputs derived from a compilation and trasformation of a bset of Quarterly Census of Employment and Wage data from the Bureau of Labor Statistics:
 
   - A quarterly long-form table that could (hypothethically) be used to drive a dashboard on the MORPC Insights platform (`./assets/output_data/qcew_quarterly_long.csv`)
   - A annual long-form table that could (hypothethically) be used to drive a dashboard on the MORPC Insights platform (`./assets/output_data/qcew_annual_long.csv`)
@@ -34,13 +33,13 @@ The table schema is described by a [Frictionless Schema file](https://specs.fric
 
 ## Processes
 
-The outputs are produced by a series of two processes which are meant to be executed in sequence:
+The outputs are produced by a process which complies and transforms the data:
 
   1. A fully-automated process implemented as a Jupyter notebook (`./assets/01-standardize_qcew_data.ipynb`) uses the raw data from inputted by the user from BLS QCEW and produces annual and quarterly standardized long-form tables (`./assets/output_data/qcew_quarterly_long.csv`, `./assets/output_data/qcew_annual_long.csv`) described above, plus standardized wide-form tables (`./assets/output_data/qcew_quarterly_wide.csv`, `./assets/output_data/qcew_annual_wide.csv`).
 
 ## Inputs
 
-The processes require inputted '.csv' files from the user.
+The process requires inputted BLS QCEW '.csv' files from the user. These files can either be obtained manualy at [QCEW website](https://www.bls.gov/cew/about-data/data-availability.htm) or automatically through API calls. The latter is used in [morpc-qcew-fetch](https://github.com/morpc/morpc-qcew-fetch) to automate the retrivial of QCEW files based on user-specified parameters. 
 
   1. Files must come from BLS QCEW and placed in input data directory (`./assets/input_data/`)
 
