@@ -108,7 +108,6 @@ outputs:
 processes:
     ### The properties below represent a list of several proceses.  Each element in the list is comprised of several properties.  
     ### A hyphen before a property name indicates that a new list element is starting. 
-
     ### The following properties are required:
     # Path to the configuration file. This can be a relative file system path or it can be a URL to a remote resource. For filesystem paths, use UNIX-style paths.
   - process_description_path: ./assets/01-standardize_qcew_data.ipynb
