@@ -23,7 +23,7 @@ fields:
     type: string
     description: 4-character year
     maxLength: 4
-  - name: quarter
+  - name: qtr
     type: string
     description: 1-character quarter (always A for annual)
     maxLength: 1
