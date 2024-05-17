@@ -11,7 +11,7 @@ title: BLS QCEW Data Compliation and Tranformation for Wide and Long-form Output
 version: 2024-05-14
 
 # A brief, human-readable description of the purpose and contents of the data kit.
-description: This data kit is intended to automate the processing of the Quarterly Census of Employment and Wages (QCEW) data, provided by the U.S. Bureau of Labor Statistics. The kit includes all resources necessary to produce a long data set based on user-specified region and years.
+description: This data kit is intended to automate the processing of the Quarterly Census of Employment and Wages (QCEW) data, provided by the U.S. Bureau of Labor Statistics. The kit includes all resources necessary to produce long and wide data sets based on user-specified region and years.
 
 # Contact information for the provider of the data kit
 provider:
@@ -24,7 +24,6 @@ provider:
 outputs:
     ### The properties below represent a list of outputs.  Each element in the list is comprised of several properties.  
     ### A hyphen before a property name indicates that a new list element is starting. 
-
     ### The following properties are required:
     # Path to Frictionless Resource descriptor file
   - resource_file_path: ./assets/output_data/qcew_annual_long.resource.yaml
@@ -103,13 +102,10 @@ outputs:
     geo_unit: County
     time_unit: Quarterly period
 
-
-# A listing of the processes required to transform the inputs to outputs with key metadata
+# The following process is required to transform the inputs to outputs with key metadata
 processes:
-    ### The properties below represent a list of several proceses.  Each element in the list is comprised of several properties.  
-    ### A hyphen before a property name indicates that a new list element is starting. 
     ### The following properties are required:
-    # Path to the configuration file. This can be a relative file system path or it can be a URL to a remote resource. For filesystem paths, use UNIX-style paths.
+    # Path to the process.
   - process_description_path: ./assets/01-standardize_qcew_data.ipynb
     ### The following properties are optional, but strongly recommended   
     # Type of process: "manual", "automatic", or "hybrid"
@@ -117,35 +113,3 @@ processes:
     # For automatic or hybrid processes, process_environment refer to software used to carry out the process. Not required for manual processes. 
     # Valid options are:"python","jupyter","r","rmarkdown"
     process_environment: jupyter
-
-# A listing of the inputs with key metadata
-inputs:
-    ### The properties below represent a list of several inputs.  Each element in the list is comprised of several properties.
-    ### The second item in the list is commented out because the data was not included due to its size.
-    ### A hyphen before a property name indicates that a new list element is starting. 
-
-    ### The following properties are required:
-    # Path to the dataset. This can be a relative file system path or it can be a URL to a remote resource. For filesystem paths, use UNIX-style paths.
-  - data_path: ./assets/input_data/
-    ### The following properties are optional, but strongly recommended
-    # Short, descriptive title for the dataset
-    title: Quarterly Census of Employment and Wage input data
-    # Short description of the item that provides people information they can scan at a glance. 2,048 characters max.
-    summary: User-iput QCEW data sets from BLS API
-    # Details about the source of the data
-    source:
-      # Contact information for the entity that provided the data
-      source_provider:
-        organization_name: U.S. Bureau of Labor Statistics
-        organization_url: https://www.bls.gov/
-        contact_name: Not applicable
-        contact_email: Not applicable
-      # If the data (or perhaps a superset) is available publicly, this is the URL where it can be found
-      source_url: https://www.bls.gov/cew/downloadable-data-files.htm
-      # If the metadata is available publicly, this is the URL where it can be found
-      source_metadata_url: https://www.bls.gov/cew/additional-resources/open-data/csv-data-slices.htm
-      # If any documentation for the data is available publicly, this URL is the best starting point
-      source_doc_url: https://www.bls.gov/cew/additional-resources/open-data/
-    #  Path to Frictionless Resource descriptor file
-    resource_file_path: ./assets/input_data/qcew-alldata.resource.yaml
-    ### All of the properties described above for output datasets may also be used for inputs, however all are optional.
