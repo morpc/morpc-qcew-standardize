@@ -19,7 +19,6 @@ This data kit is a work in progress.
 Each quarter the U.S. Bureau of Labor Statistics Census of Employment and Wage produces count of employment and wages reported by employers for the prior quarter. This data set includes annual factors for each given year, average establishment counts and employment levels, total wages, taxable wages and annual contributions, average annual and weekly pay, along with over the year change by count and percentage for each previously mentioned factor. The location quotient for average establishment counts and employment levels, total wages, taxable wages and annual contributions are also included.
 
 ## Outputs
-qcew_annual_long
 This data kit includes up to four standardized outputs derived from a compilation and trasformation of a bset of Quarterly Census of Employment and Wage data from the Bureau of Labor Statistics:
 
   - A quarterly long-form table that could (hypothethically) be used to drive a dashboard on the MORPC Insights platform (`./assets/output_data/qcew_quarterly_long.csv`)
