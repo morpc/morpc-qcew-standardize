@@ -38,7 +38,7 @@ The outputs are produced by a process which complies and transforms the data:
 
 ## Inputs
 
-The process requires inputted BLS QCEW '.csv' files from the user. These files can either be obtained manualy at [QCEW website](https://www.bls.gov/cew/about-data/data-availability.htm) or automatically using [morpc-qcew-fetch](https://github.com/morpc/morpc-qcew-fetch) to automate the retrivial of QCEW files based on user-specified parameters. 
+The process requires inputted BLS QCEW '.csv' files from the user. These files can either be obtained manualy at [BLS website](https://www.bls.gov/cew/about-data/data-availability.htm) or automatically using [morpc-qcew-fetch](https://github.com/morpc/morpc-qcew-fetch) to automate the retrivial of QCEW files based on user-specified parameters. 
 
   1. Files must come from BLS QCEW and placed in input data directory (`./assets/input_data/`)
 
