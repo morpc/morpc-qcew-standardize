@@ -9,6 +9,6 @@ scheme: file
 format: csv
 mediatype: text/csv
 encoding: utf-8
-hash: fe8f0f0da5d8994a04289dd88bf6ff7b
-bytes: 581689
+hash: d52cd997dacf35b17a90b1630e9b4551
+bytes: 2443605
 schema: morpc-qcew-quarterly.schema.yaml

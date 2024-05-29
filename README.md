@@ -1,7 +1,7 @@
 # Data Kit - County Quarterly Census of Employment and Wage Filtering
 ## Version
 
-Current version: 2024-05-16
+Current version: 2024-05-14
 
 ## Provider
 
@@ -19,7 +19,8 @@ This data kit is a work in progress.
 Each quarter the U.S. Bureau of Labor Statistics Census of Employment and Wage produces count of employment and wages reported by employers for the prior quarter. This data set includes annual factors for each given year, average establishment counts and employment levels, total wages, taxable wages and annual contributions, average annual and weekly pay, along with over the year change by count and percentage for each previously mentioned factor. The location quotient for average establishment counts and employment levels, total wages, taxable wages and annual contributions are also included.
 
 ## Outputs
-This data kit includes up to four standardized outputs derived from a compilation and trasformation of a set of Quarterly Census of Employment and Wage data from the Bureau of Labor Statistics:
+qcew_annual_long
+This data kit includes up to four standardized outputs derived from a compilation and trasformation of a bset of Quarterly Census of Employment and Wage data from the Bureau of Labor Statistics:
 
   - A quarterly long-form table that could (hypothethically) be used to drive a dashboard on the MORPC Insights platform (`./assets/output_data/qcew_quarterly_long.csv`)
   - A annual long-form table that could (hypothethically) be used to drive a dashboard on the MORPC Insights platform (`./assets/output_data/qcew_annual_long.csv`)
@@ -38,7 +39,7 @@ The outputs are produced by a process which complies and transforms the data:
 
 ## Inputs
 
-The process requires inputted BLS QCEW '.csv' files from the user. These files can either be obtained manualy at [BLS website](https://www.bls.gov/cew/about-data/data-availability.htm) or automatically using [morpc-qcew-fetch](https://github.com/morpc/morpc-qcew-fetch) to automate the retrivial of QCEW files based on user-specified parameters. 
+The process requires inputted BLS QCEW '.csv' files from the user. These files can either be obtained manualy at [QCEW website](https://www.bls.gov/cew/about-data/data-availability.htm) or automatically through API calls. The latter is used in [morpc-qcew-fetch](https://github.com/morpc/morpc-qcew-fetch) to automate the retrivial of QCEW files based on user-specified parameters. 
 
   1. Files must come from BLS QCEW and placed in input data directory (`./assets/input_data/`)
 
