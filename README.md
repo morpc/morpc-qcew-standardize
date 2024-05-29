@@ -1,4 +1,4 @@
-# Data Kit - County Quarterly Census of Employment and Wage Filtering
+# Data Kit - County Quarterly Census of Employment and Wage Standardization
 ## Version
 
 Current version: 2024-05-14
